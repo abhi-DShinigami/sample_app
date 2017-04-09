@@ -37,14 +37,18 @@ gem 'fog',                            '~> 1.40'
 gem 'bootstrap-sass',                 '~> 3.3', '>= 3.3.7'
 gem 'sdoc',                            '~> 0.4.2', group: :doc
 
+gem 'pry-nav', group: [:development, :test]
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3', '>= 1.3.13'
   gem 'byebug', '~> 9.0', '>= 9.0.6'
-  gem 'web-console', '~> 3.5'
+  gem 'web-console', '~> 3.5', group: :development
   gem 'spring', '~> 2.0', '>= 2.0.1'
+  gem 'guard', '~> 2.14'
 end
 
 group :test do

@@ -49,6 +49,7 @@ group :development, :test do
   gem 'web-console', '~> 3.5', group: :development
   gem 'spring', '~> 2.0', '>= 2.0.1'
   gem 'guard', '~> 2.14'
+  gem 'minitest', '~> 5.8', '>= 5.8.4'
 end
 
 group :test do

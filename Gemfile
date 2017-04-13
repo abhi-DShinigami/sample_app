@@ -48,14 +48,9 @@ group :development, :test do
   gem 'byebug', '~> 9.0', '>= 9.0.6'
   gem 'web-console', '~> 3.5', group: :development
   gem 'spring', '~> 2.0', '>= 2.0.1'
-  gem 'guard', '~> 2.14'
-  gem 'minitest', '~> 5.8', '>= 5.8.4'
 end
 
 group :test do
-  gem 'minitest-reporters', '~> 1.1', '>= 1.1.14'
-  gem 'mini_backtrace', '~> 0.1.3'
-  gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
 end
 
 group :development do
@@ -66,6 +61,9 @@ group :development do
   gem 'spring', '~> 2.0', '>= 2.0.1'
   gem 'sqlite3', '~> 1.3', '>= 1.3.13'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
 end
 
 group :production do
